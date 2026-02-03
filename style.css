@@ -1,4 +1,7 @@
 /* Base styles */
+html {
+		  scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -51,6 +54,29 @@ body {
 .site-description {
     color: #828282;
     font-size: 1em;
+	 margin: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+	 gap: 15px;
+}
+
+.site-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.site-nav a {
+    color: #2a7ae2;
+    text-decoration: none;
+    font-size: 1em;
+	 white-space: nowrap;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
 }
 
 /* Main content */
@@ -100,12 +126,11 @@ body {
 }
 
 .gallery-item {
-    text-align: center;
+    /* No text-align needed */
 }
 
 .image-wrapper {
     position: relative;
-    display: inline-block;
     width: 100%;
 }
 
@@ -149,11 +174,61 @@ body {
     margin-top: 8px;
     font-size: 0.9em;
     color: #828282;
-	 text-align: left;
+    text-align: left;
 }
 
 .caption p {
     margin: 5px 0;
+}
+
+/* Info box */
+.info-box {
+    margin-top: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s;
+}
+
+.info-box:hover {
+    background-color: #f0f0f0;
+}
+
+.info-toggle {
+    font-size: 0.9em;
+    color: #2a7ae2;
+    display: block;
+}
+
+.plus-sign {
+    font-weight: bold;
+    margin-left: 5px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.info-box.active .plus-sign {
+    transform: rotate(45deg);
+}
+
+.info-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-top: 0;
+}
+
+.info-box.active .info-content {
+    max-height: 500px;
+    margin-top: 10px;
+}
+
+.info-content p {
+    margin: 5px 0;
+    font-size: 0.85em;
+    color: #555;
 }
 
 /* Links list */
@@ -184,6 +259,16 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.post-content ul,
+.post-content ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.post-content li {
+    margin-bottom: 5px;
 }
 
 /* Footer */
