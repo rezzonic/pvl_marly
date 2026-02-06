@@ -221,7 +221,7 @@ body {
 }
 
 .info-box.active .info-content {
-    max-height: 500px;
+    max-height: 800px;
     margin-top: 10px;
 }
 
@@ -269,6 +269,17 @@ a:hover {
 
 .post-content li {
     margin-bottom: 5px;
+}
+
+.info-content ul {
+    margin: 5px 0;
+    margin-left: 20px;
+    font-size: 0.85em;
+    color: #555;
+}
+
+.info-content li {
+    margin: 3px 0;
 }
 
 /* Footer */
