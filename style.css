@@ -221,7 +221,7 @@ body {
 }
 
 .info-box.active .info-content {
-    max-height: 800px;
+    max-height: 1600px;
     margin-top: 10px;
 }
 
@@ -280,6 +280,15 @@ a:hover {
 
 .info-content li {
     margin: 3px 0;
+}
+
+/* Video embed */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
 }
 
 /* Footer */
