@@ -285,6 +285,7 @@ a:hover {
 /* Video embed */
 .video-wrapper {
     position: relative;
+	 padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     margin: 20px auto;
