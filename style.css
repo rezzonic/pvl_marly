@@ -316,6 +316,14 @@ a:hover {
     text-align: center;
 }
 
+.fr {
+	 color: #044d14;
+}
+
+.de {
+	 color: #00254d;
+}
+
 /* Responsive */
 @media screen and (max-width: 600px) {
     .container {
